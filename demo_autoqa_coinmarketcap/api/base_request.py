@@ -23,7 +23,7 @@ class BaseRequest:
         self.log = structlog.get_logger()
         self.request_delay = config.api_request_delay
 
-    @step("Отправить запрос: {method}, {endpoint}")
+    @allure.step("{method}: {endpoint}")
     def request(self, method, endpoint, **kwargs):
         url = urljoin(self.api_url, endpoint)
         self.log.msg(

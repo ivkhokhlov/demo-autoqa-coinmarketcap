@@ -4,7 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["Ivan Khokhlov <xxx.mailbox73@gmail.com>"]
 readme = "README.md"
-packages = [{include = "demo_autoqa_coinmarketcap"}]
+packages = [{ include = "demo_autoqa_coinmarketcap" }]
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -24,3 +24,11 @@ black = "^23.11.0"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = "-v --alluredir=allure-results --clean-alluredir"
+markers = [
+    "api: marks tests as part of the API suite",
+    "regress: marks tests as part of regression tests",
+    "smoke: marks tests as smoke tests"
+]
