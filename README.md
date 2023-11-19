@@ -1,8 +1,10 @@
 # Демонстрационный проект для портала https://coinmarketcap.com/
-![image](/assets/coinmarketcap-separat.png)
+![image](https://github.com/ivkhokhlov/demo-autoqa-coinmarketcap/assets/58159018/6917e381-31e7-4e64-bd17-dea6fa2c2ea2)
+
 ## Описание
 Демо-проект для главной coinmarketcap.com для демонстрации возможностей тестирования в связке API + UI + MOBILE для одного продукта
-![image](https://github.com/ivkhokhlov/store_gaijin_demo/assets/58159018/a8f6b440-0997-4417-b731-723c90e20cf8)
+![image](https://github.com/ivkhokhlov/demo-autoqa-coinmarketcap/assets/58159018/5d7682a4-e82c-4f58-bd1b-c539f3e009cd)
+
 
 ## Стек технологий
 <p  align="center">
@@ -62,6 +64,8 @@ python -m pytest
 ![image](https://github.com/ivkhokhlov/demo-autoqa-coinmarketcap/assets/58159018/0178c9d5-0ccc-42a2-b28c-c921c27ad4f3)
 
 ## Allure TestOps
+Выгрузка отчетов настроена в AllureTestOPS + обратная интеграция в Jenkins для еденичнго запуска
+https://allure.autotests.cloud/launch/32398/tree/523384?treeId=7460
 ![image](https://github.com/ivkhokhlov/demo-autoqa-coinmarketcap/assets/58159018/338a1d28-0a63-4b15-a523-41bd050972ec)
 
 ## Видео запуска тестов
