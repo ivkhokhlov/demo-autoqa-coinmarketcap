@@ -25,11 +25,12 @@
 ### Запуск тестов локально
 1. Клонировать репозиторий
 ```
-git clone git@github.com:ivkhokhlov/store_gaijin_demo.git
+git clone git@github.com:ivkhokhlov/demo-autoqa-coinmarketcap
+.git
 ```
 2. Перейти в папку
 ```
-cd store_gaijin_demo
+cd demo-autoqa-coinmarketcap
 ```
 3. Инициализировать виртуальное окружение
 ```
