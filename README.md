@@ -1,5 +1,5 @@
 # Демонстрационный проект для портала https://coinmarketcap.com/
-![image](https://github.com/ivkhokhlov/store_gaijin_demo/assets/58159018/33fb6e7d-7d8d-482c-a12b-0285b40e9881)
+![image](/assets/coinmarketcap-separat.png)
 ## Описание
 Демо-проект для страницы настроек профиля пользователя.
 ![image](https://github.com/ivkhokhlov/store_gaijin_demo/assets/58159018/a8f6b440-0997-4417-b731-723c90e20cf8)
