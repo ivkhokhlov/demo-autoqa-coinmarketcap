@@ -8,7 +8,6 @@ certifi==2023.11.17
 charset-normalizer==3.3.2
 click==8.1.7
 curlify==2.2.1
--e git+ssh://git@github.com/ivkhokhlov/demo-autoqa-coinmarketcap.git@6324b4018783c6c93f0fb9e20ba1ac745ad4b43a#egg=demo_autoqa_coinmarketcap
 Faker==20.0.3
 future==0.18.3
 h11==0.14.0
