@@ -8,13 +8,17 @@
 
 ## Стек технологий
 <p  align="center">
-<code><img width="5%" title="Python" src="assets/python.png"></code>
-<code><img width="5%" title="Pytest" src="assets/pytest.png"></code>
-<code><img width="5%" title="Selene" src="assets/selene.png"></code>
-<code><img width="5%" title="Selenium" src="assets/selenium.png"></code>
-<code><img width="5%" title="Selenoid" src="assets/selenoid.png"></code>
-<code><img width="5%" title="Jenkins" src="assets/jenkins.png"></code>
-<code><img width="5%" title="Telegram" src="assets/tg.png"></code>
+<code><img width="7%" title="Python" src="assets/python.png"></code>
+<code><img width="7%" title="Pytest" src="assets/pytest.png"></code>
+<code><img width="7%" title="Selene" src="assets/selene.png"></code>
+<code><img width="7%" title="Selenium" src="assets/selenium.png"></code>
+<code><img width="7%" title="Selenoid" src="assets/selenoid.png"></code>
+<code><img width="7%" title="Jenkins" src="assets/jenkins.png"></code>
+<code><img width="7%" title="Telegram" src="assets/tg.png"></code>
+<code><img width="7%" title="Jenkins" src="assets/jira.png"></code>
+<code><img width="7%" title="Telegram" src="assets/requests.png"></code>
+<code><img width="7%" title="Telegram" src="assets/browserstack.png"></code>
+<code><img width="7%" title="Telegram" src="assets/appium.png"></code>
 </p>
 
 ## Запуск тестов
