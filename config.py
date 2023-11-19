@@ -1,5 +1,9 @@
+from pydantic import UUID4
+
 from pydantic_settings import BaseSettings, SettingsConfigDict
-from uuid import UUID
+import os
+
+BASE_DIR = os.path.dirname(__file__)
 
 
 class TestUser(BaseSettings):
@@ -9,14 +13,14 @@ class TestUser(BaseSettings):
 
 class Config(BaseSettings):
     model_config = SettingsConfigDict(
-        env_file='.env',
+        env_file=os.path.join(BASE_DIR, '.env'),
         env_file_encoding='utf-8',
         env_nested_delimiter='.'
     )
 
     api_url: str = 'https://pro-api.coinmarketcap.com/'
-    api_key: UUID
+    api_key: str
     test_user: TestUser = TestUser()
 
 
-base_settings = Config()
+config = Config()

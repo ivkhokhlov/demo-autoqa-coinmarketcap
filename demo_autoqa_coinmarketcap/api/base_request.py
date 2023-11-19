@@ -1,49 +1,51 @@
 import json
+from urllib.parse import urljoin
 
 import allure
+import requests
 import structlog
 from allure import step
 from allure_commons.types import AttachmentType
 from curlify import to_curl
-from requests import Session
+
+from config import config
 
 
 class BaseRequest:
     def __init__(self):
-        self.base_url = BASE_URL
+        self.api_url = config.api_url
+        self.api_key = config.api_key
+        self.session = requests.Session()
+        self.session.headers.update(
+            {"X-CMC_PRO_API_KEY": self.api_key, "Accept": "application/json"}
+        )
         self.log = structlog.get_logger()
-        self.session = session if session else Session()
 
     @step("Отправить запрос: {method}, {endpoint}")
     def request(self, method, endpoint, **kwargs):
-
+        url = urljoin(self.api_url, endpoint)
         self.log.msg(
             "request",
             method=method,
-            base_url=self.base_url,
+            base_url=self.api_url,
             endpoint=endpoint,
             kwargs=kwargs if kwargs else None,
         )
-
-        url = f"{self.base_url}{endpoint}"
-        response = self.session.request(method, url, verify=False, **kwargs)
-
+        response = self.session.request(method, url, **kwargs)
         allure.attach(
             body=to_curl(response.request),
             name="cURL",
             attachment_type=AttachmentType.TEXT,
             extension="txt",
         )
-
         self.log.msg(
             "response",
             method=method,
-            base_url=self.base_url,
+            base_url=self.api_url,
             endpoint=endpoint,
             status_code=response.status_code,
             response_text=response.text,
         )
-
         try:
             response_data = response.json()
             allure.attach(
@@ -57,3 +59,4 @@ class BaseRequest:
             response_data = None
 
         return response.status_code, response_data
+   
