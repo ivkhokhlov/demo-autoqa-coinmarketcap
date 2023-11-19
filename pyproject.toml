@@ -16,6 +16,8 @@ pydantic = "^2.5.1"
 pydantic-settings = "^2.1.0"
 python-dotenv = "^1.0.0"
 faker = "^20.0.3"
+curlify = "^2.2.1"
+structlog = "^23.2.0"
 
 
 [build-system]
