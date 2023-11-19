@@ -6,3 +6,6 @@ tmp.py
 **/.pytest_cache/
 **/allure-results/
 allure-results
+.env.bstack
+.env.local_real
+apk/CoinMarketCap_4.31.1.apk

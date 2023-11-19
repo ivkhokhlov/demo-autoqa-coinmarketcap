@@ -29,7 +29,7 @@ class MainPage:
         self.cmc_table.element('a').click()
 
     def click_on_row_by_symbol(self, symbol):
-        self.cmc_table.element(f"//tr[.//p[contains(text(), '{symbol}')]]")
+        self.cmc_table.element(f"//tr[.//p[contains(text(), '{symbol}')]]").click()
 
     def should_tabs_be_on_page(self, tab_names: list):
         for tab_name in tab_names:

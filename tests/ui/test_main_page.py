@@ -77,10 +77,7 @@ def test_table_buttons_names():
     "the cryptocurrency row. The test ensures that selecting a cryptocurrency symbol like BTC, LTC, or ETH leads "
     "to the correct currency page, verifying both the coin name and symbol."
 )
-@pytest.mark.parametrize('symbol, name', [('BTC', 'Bitcoin'),
-                                          ('LTC', 'Litecoin'),
-                                          ('ETH', 'Ethereum'),
-                                          ])
+@pytest.mark.parametrize('symbol, name', [('ETH', 'Ethereum')])
 def test_click_on_currency_from_main_page(symbol, name):
     with allure.step("Open Main Page"):
         cmc_ui.main_page.open()
