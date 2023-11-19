@@ -29,6 +29,7 @@ build-backend = "poetry.core.masonry.api"
 addopts = "-v --alluredir=allure-results --clean-alluredir"
 markers = [
     "api: marks tests as part of the API suite",
+    "ui: marks tests as part of the UI suite",
     "regress: marks tests as part of regression tests",
     "smoke: marks tests as smoke tests"
 ]
