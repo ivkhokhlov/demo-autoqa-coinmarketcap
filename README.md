@@ -1,5 +1,6 @@
-# Демонстрационный проект для портала https://coinmarketcap.com/
-![image](https://github.com/ivkhokhlov/demo-autoqa-coinmarketcap/assets/58159018/6917e381-31e7-4e64-bd17-dea6fa2c2ea2)
+# Демонстрационный проект API + UI + MOBILE на примере портала [coinmarketcap.com](https://coinmarketcap.com/)
+![image](https://github.com/ivkhokhlov/demo-autoqa-coinmarketcap/assets/58159018/e3d953ee-931f-4131-a9ed-068984b35030)
+
 
 ## Описание
 Демо-проект для главной coinmarketcap.com для демонстрации возможностей тестирования в связке API + UI + MOBILE для одного продукта
