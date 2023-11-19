@@ -22,7 +22,7 @@ class LoginPage:
         self.login_button.click()
 
     def click_close_button(self):
-        self.close_button.click_close_button()
+        self.close_button.click()
         pass
 
     def login(self):
@@ -45,7 +45,7 @@ class LoginPage:
         self.login_button.should(be.clickable)
 
     def is_captcha_appears(self):
-        return browser.element('.bcap-text-message-title').get(query.attribute('class')) is None
+        return browser.element('.bcap-text-message-title').get(query.attribute('class')) is not None
 
     def should_be_logged_in(self):
         #  TODO resolve captcha issue

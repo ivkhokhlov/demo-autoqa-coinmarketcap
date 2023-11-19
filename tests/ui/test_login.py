@@ -76,6 +76,9 @@ def test_login_from_currency_page():
         if cmc_ui.login_page.is_captcha_appears():
             pytest.skip("Captcha Issue")
 
+    with allure.step("Check if Log In was successful"):
+        cmc_ui.login_page.should_be_logged_in()
+
 
 @pytest.mark.ui
 @pytest.mark.regress
@@ -107,7 +110,7 @@ def test_login_invalid_user_name():
 
     with allure.step("Verify Error Message for Invalid Username"):
         cmc_ui.login_page.should_have_error_message(
-            'The password you entered is not in the correct format. Please check.')
+            'The email you entered is not in the correct format. Please check.')
 
 
 @pytest.mark.ui
