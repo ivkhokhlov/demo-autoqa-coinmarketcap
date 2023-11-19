@@ -41,7 +41,7 @@ def browser_management(request):
 
     browser.config.driver = driver
 
-    browser.config.browser_name = 'chrome'
+    browser.config.browser_name = browser_name
     browser.config.window_width = 1366
     browser.config.window_height = 768
     browser.config.timeout = config.browser_timeout
