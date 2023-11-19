@@ -44,12 +44,6 @@ source ./venv/bin/activate
 pip install -r requirements.txt
 ```
 6. Положить .env файл в папку с проектом
-```
-GAIJIN_LOGIN = 'xokev83191@ipnuc.com'
-GAIJIN_PASSWORD = 123456
-SELENE_LOGIN = 'user1'
-SELENE_PASSWORD = 1234
-```
 7. Запустить тесты
 ```
 python -m pytest
@@ -66,17 +60,23 @@ python -m pytest
 4. После успешной сборки, Allure-отчет с результатами будет доступен в истории сборок
 <details><summary>screenshot</summary><img src=https://github.com/ivkhokhlov/store_gaijin_demo/assets/58159018/8a3e48cf-a4fd-4a82-bc6c-c41b0213d6e3></details>
 
-## Отчеты
-
+## Отчеты и TMS
 ### Allure-отчет
-Доступен по [ссылке](https://jenkins.autotests.cloud/job/C07-master_klinka-store_gaijin_demo/16/allure/)
-![image](https://github.com/ivkhokhlov/store_gaijin_demo/assets/58159018/82f540bf-cd90-49cc-b218-292c346a77a3)
-![image](https://github.com/ivkhokhlov/store_gaijin_demo/assets/58159018/6638c88b-71ee-40cd-a478-c92e8305eda3)
-![image](https://github.com/ivkhokhlov/store_gaijin_demo/assets/58159018/926d7d2e-c4ba-4304-a71a-03fa5d8c5878)
+Доступен по [[ссылке](https://jenkins.autotests.cloud/job/C07-master_klinka-store_gaijin_demo/16/allure/)](https://jenkins.autotests.cloud/job/07-master_klinka-diploma/20/allure)
+Отчет полностью прописан по шагам и готов для интеграции в TestOps
+![image](https://github.com/ivkhokhlov/demo-autoqa-coinmarketcap/assets/58159018/b6f22bc0-5958-4559-bd6e-36c1d3336c61)
+![image](https://github.com/ivkhokhlov/demo-autoqa-coinmarketcap/assets/58159018/0178c9d5-0ccc-42a2-b28c-c921c27ad4f3)
+
+### Allure TestOps
 
 
 ### Пример оповещений в Telegram
-![image](https://github.com/ivkhokhlov/store_gaijin_demo/assets/58159018/167cd8d9-a7c0-45ef-9118-abe0579dc69e)
-### Видео запуска теста
-Браузеры запускаются удаленно на Selenide
-![selene](https://github.com/ivkhokhlov/store_gaijin_demo/assets/58159018/cac8b732-daf2-44d6-b572-41cbd0edef7e)
+![image](https://github.com/ivkhokhlov/demo-autoqa-coinmarketcap/assets/58159018/b089374e-c75a-426f-82c1-dc5b2033697a)
+
+## Видео запуска тестов
+### UI
+![2ade84bbd1f69befc2911a23a01b06d8](https://github.com/ivkhokhlov/demo-autoqa-coinmarketcap/assets/58159018/240e67c9-c053-4032-ab20-1757fdc70547)
+### MOBILE
+![73330c21c59b131204250343f485ce9fa8868a6d](https://github.com/ivkhokhlov/demo-autoqa-coinmarketcap/assets/58159018/237224df-2a14-4a64-b8cd-178e65d13d0d)
+
+
