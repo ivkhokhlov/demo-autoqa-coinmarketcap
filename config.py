@@ -20,6 +20,7 @@ class Config(BaseSettings):
 
     api_url: str = 'https://pro-api.coinmarketcap.com/'
     api_key: str
+    api_request_delay: int = 2
     test_user: TestUser = TestUser()
 
 

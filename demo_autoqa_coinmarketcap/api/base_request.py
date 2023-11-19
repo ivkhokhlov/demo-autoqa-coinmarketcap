@@ -1,4 +1,5 @@
 import json
+import time
 from urllib.parse import urljoin
 
 import allure
@@ -20,6 +21,7 @@ class BaseRequest:
             {"X-CMC_PRO_API_KEY": self.api_key, "Accept": "application/json"}
         )
         self.log = structlog.get_logger()
+        self.request_delay = config.api_request_delay
 
     @step("Отправить запрос: {method}, {endpoint}")
     def request(self, method, endpoint, **kwargs):
@@ -31,6 +33,7 @@ class BaseRequest:
             endpoint=endpoint,
             kwargs=kwargs if kwargs else None,
         )
+        time.sleep(self.request_delay)
         response = self.session.request(method, url, **kwargs)
         allure.attach(
             body=to_curl(response.request),
@@ -59,4 +62,3 @@ class BaseRequest:
             response_data = None
 
         return response.status_code, response_data
-   
