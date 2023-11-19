@@ -31,6 +31,7 @@ addopts = "-v --alluredir=allure-results --clean-alluredir"
 markers = [
     "api: marks tests as part of the API suite",
     "ui: marks tests as part of the UI suite",
+    "mobile: marks tests as part of the MOBILE suite",
     "regress: marks tests as part of regression tests",
     "smoke: marks tests as smoke tests"
 ]
