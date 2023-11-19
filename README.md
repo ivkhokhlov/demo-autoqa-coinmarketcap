@@ -26,8 +26,7 @@
 ### Запуск тестов локально
 1. Клонировать репозиторий
 ```
-git clone git@github.com:ivkhokhlov/demo-autoqa-coinmarketcap
-.git
+git clone git@github.com:ivkhokhlov/demo-autoqa-coinmarketcap.git
 ```
 2. Перейти в папку
 ```
