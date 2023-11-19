@@ -1,4 +1,5 @@
-from base_request import BaseRequest
+from demo_autoqa_coinmarketcap.api.base_request import BaseRequest
+
 
 class CoinmarketcapAPI(BaseRequest):
     def __init__(self):
