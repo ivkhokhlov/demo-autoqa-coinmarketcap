@@ -3,7 +3,7 @@
 
 
 ## Описание
-Демо-проект для главной coinmarketcap.com для демонстрации возможностей тестирования в связке API + UI + MOBILE для одного продукта
+Демо-проект для демонстрации возможностей тестирования в связке API + UI + MOBILE в рамках одного продукта
 ![image](https://github.com/ivkhokhlov/demo-autoqa-coinmarketcap/assets/58159018/5d7682a4-e82c-4f58-bd1b-c539f3e009cd)
 
 
