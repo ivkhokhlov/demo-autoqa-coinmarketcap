@@ -52,7 +52,7 @@ python -m pytest
 ### Параметризованный запуск
 Для каждого из тестов проставлен тег и существует возможность кастомизации входных параметров
 ### Удаленный запуск проекта в Jenkins
-Проект доступен по [ссылке](https://jenkins.autotests.cloud/job/C07-master_klinka-store_gaijin_demo/), сборка и просмотр отчетов доступна для неавторизованных пользователей.
+Проект доступен по [ссылке](https://jenkins.autotests.cloud/job/07-master_klinka-diploma/) сборка и просмотр отчетов доступна для неавторизованных пользователей.
 1. Открыть проект в Jenkins
 2. Нажать "Собрать с параметрами"
 3. Заполнить параметры, нажать "Собрать"
@@ -61,7 +61,7 @@ python -m pytest
 
 # Отчеты и TMS
 ## Allure-отчет
-Доступен по [[ссылке](https://jenkins.autotests.cloud/job/C07-master_klinka-store_gaijin_demo/16/allure/)](https://jenkins.autotests.cloud/job/07-master_klinka-diploma/20/allure)
+Доступен по [ссылке](https://jenkins.autotests.cloud/job/07-master_klinka-diploma/). 
 Отчет полностью прописан по шагам и готов для интеграции в TestOps
 ![image](https://github.com/ivkhokhlov/demo-autoqa-coinmarketcap/assets/58159018/b6f22bc0-5958-4559-bd6e-36c1d3336c61)
 ![image](https://github.com/ivkhokhlov/demo-autoqa-coinmarketcap/assets/58159018/0178c9d5-0ccc-42a2-b28c-c921c27ad4f3)
