@@ -61,7 +61,7 @@ python -m pytest
 
 # Отчеты и TMS
 ## Allure-отчет
-Доступен по [ссылке](https://jenkins.autotests.cloud/job/07-master_klinka-diploma/). 
+Доступен по [ссылке](https://jenkins.autotests.cloud/job/07-master_klinka-diploma/22/allure/). 
 Отчет полностью прописан по шагам и готов для интеграции в TestOps
 ![image](https://github.com/ivkhokhlov/demo-autoqa-coinmarketcap/assets/58159018/b6f22bc0-5958-4559-bd6e-36c1d3336c61)
 ![image](https://github.com/ivkhokhlov/demo-autoqa-coinmarketcap/assets/58159018/0178c9d5-0ccc-42a2-b28c-c921c27ad4f3)
